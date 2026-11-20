@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Crepes & Choco Milk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3 px-md-4 py-2">
+            <div class="container-fluid">
+                <img src="../Project-Website-UMKM-3/assets/img/logo.jpg" alt="Logo" class="logo me-2 me-md-3" width="50"
+                    height="50">
+                <p class=" d-md-block fw-bold mt-3">
+                    <span class="ungu d-none d-md-inline">Crepes</span> <span class="coklat d-none d-md-inline"> & Choco
+                        Milk</span>
+                </p>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end text-center text-lg-end" id="navbarNav">
+                    <ul class="navbar-nav pt-2 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="produk.html">Produk</a></li>
+                        <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="about.html">Tentang Kami</a></li>
+                        <li class="nav-item"><a class="nav-link active py-1 py-lg-2" href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="judul py-4 text-center" style="margin-top: 90px;">
+        <div class="container">
+            <h1 class="fw-bold mb-2">Hubungi Kami</h1>
+            <p class="text-muted mb-0">Kami siap menerima pertanyaan & pesanan Anda!</p>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm p-3 p-md-4 h-100">
+                    <h2 class="h4 fw-bold mb-3">Kirim Pesan</h2>
+
+                    <form onsubmit="kirimPesan(event)">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telepon" class="form-label">Nomor Telepon</label>
+                            <input type="tel" class="form-control" id="telepon"
+                                placeholder="Masukkan Nomor Telepon Anda">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" placeholder="Tuliskan Pesanan Anda.."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm p-3 p-md-4 h-100 bg-light">
+                    <h2 class="h4 fw-bold mb-3">Informasi Terkait Usaha</h2>
+
+                    <div class="mb-3">
+                        <p class="mb-1 text-muted small fw-bold">NAMA USAHA</p>
+                        <p class="mb-0 fw-semibold">Crepes & Choco Milk</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <p class="mb-1 text-muted small fw-bold">ALAMAT</p>
+                        <p class="mb-0">Jl. Werkudara (Di depan SMK Negeri 1 MAS UBUD)</p>
+                    </div>
+
+                    <div class="mb-0">
+                        <p class="mb-1 text-muted small fw-bold">WHATSAPP</p>
+                        <p class="mb-0">
+                            <a href="https://wa.me/6282194955526" target="_blank" class="text-decoration-none">
+                                0821-9495-5526
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light text-dark pt-5 pb-4 border-top mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">
+                        <span class="ungu">Crepes</span> <span class="coklat">& Choco Milk</span>
+                    </h5>
+                    <p class="text-muted small">
+                        Crunchy crepesnya, kental choco milknya. Teman camilan manis terbaik dengan harga ramah di
+                        kantong untuk
+                        setiap momenmu.
+                    </p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-bold mb-3">Menu Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+                        <li class="mb-2"><a href="produk.html" class="text-decoration-none text-muted">Produk</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-muted">Tentang Kami</a>
+                        </li>
+                        <li class="mb-2"><a href="kontak.html" class="text-decoration-none text-muted">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-bold mb-3">Hubungi Kami</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2 coklat"></i> Jl. Werkudara (Di depan
+                            SMK Negeri 1 MAS UBUD)
+                        </li>
+                        <li class="mb-3"><i class="fa-regular fa-clock me-2 coklat"></i> Buka: 10.00 - 21.00</li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/kedaiwahyukrishna_?bqrl=YTNiNGgzc3ZneWFz"
+                            class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@tuinaa_" class="text-dark fs-5"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 <strong>Crepes & Choco Milk</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

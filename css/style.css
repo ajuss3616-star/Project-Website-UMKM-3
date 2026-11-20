@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+:root {
+    --tinta: #222126;
+    --kertas: #faf9f6;
+    --putih: #ffffff;
+    --ungu: #a77bd8;
+}
+
+html {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    background-color: (--kertas);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navtext {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: (--tinta);
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: (--tinta);
+}
+
+.fotonav img {
+    width: 90px;
+    height: auto;
+}
+
+.ungu {
+    color: #6f42c1;
+}
+
+.coklat {
+    color: brown;
+}
+
+.gambarbanner {
+    border-radius: 12px;
+    border: 10px dashed var(--ungu) !important;
+    box-shadow: 0 15px 30px var(--tinta) !important;
+}
+
+.card1,
+.card2,
+.card3 {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--tinta) !important;
+}
+
+.pesansekarang {
+    background-color: var(--tinta);
+    border-color: var(--tinta);
+    color: var(--putih);
+    transition: 0.3s ease;
+}
+
+.pesansekarang:hover {
+    background-color: var(--ungu);
+    border-color: var(--ungu);
+    color: var(--putih);
+}
+
+.product-heading {
+    color: var(--cokelat-tua);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: var(--ungu-muda);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h5 {
+    color: var(--cokelat-tua);
+    font-weight: 600;
+    min-height: 48px;
+}
+
+.product-info p {
+    color: var(--ungu);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-info label {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.order-section {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-section h2 {
+    color: var(--cokelat-tua);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.order-section>p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--ungu);
+    box-shadow: 0 0 0 0.2rem rgba(167, 123, 216, 0.2);
+}
