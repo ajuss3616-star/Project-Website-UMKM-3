@@ -1,135 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tentang Kami - Crepes & Choco Milk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-     <header>
-        <div class="logo">Crepes & <span>Choco Milk</span></div>
+<body class="bg-light">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3 px-md-4 py-2">
+      <div class="container-fluid">
+        <img src="../Project-Website-UMKM-3/assets/img/logo.jpg" alt="Logo" class="logo me-2 me-md-3" width="50"
+          height="50">
+        <p class=" d-md-block fw-bold mt-3">
+          <span class="ungu d-none d-md-inline">Crepes</span> <span class="coklat d-none d-md-inline"> & Choco
+            Milk</span>
+        </p>
 
-        <a href="index.html">Beranda</a>
-        <a href="produk.html">Produk</a>
-        <a href="about.html">Tentang Kami</a>
-        <a href="kontak.html">Kontak</a>
-    </header>
-    
-                         <!-- TENTANG KAMI PROFIL -->
-     <section id="tentang" class="section">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end text-center text-lg-end" id="navbarNav">
+          <ul class="navbar-nav pt-2 pt-lg-0">
+            <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="produk.html">Produk</a></li>
+            <li class="nav-item"><a class="nav-link  active py-1 py-lg-2" href="about.html">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link py-1 py-lg-2" href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <section id="tentang" class="py-5"style="margin-top: 90px;">
         <div class="container">
-            <div class="section-head">
-                <span class="kicker">Tentang Kami</span>
-                <h2>Usaha kecil yang belajar dari hari ke hari</h2>
-                <p>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Usaha kecil yang belajar dari hari ke hari</h2>
+                <p class="text-muted lead col-lg-8 mx-auto">
                     Kenali pemilik di balik Crepes & Choco Milk - orang yang 
                     masih bingung memilih kuliah, tetapi tidak bingung soal
                     rasa crepesnya.
                 </p>
             </div>
 
-                        <!-- KARTU PROFIL PEMILIK -->
-            <div class="about-grid">
-                <aside class="owner-card">
-                    <div class="owner-avatar">INA</div>
-                    <h3>Ina (Pemilik Crepes & Choco Milk)</h3>
-                    <p class="owner-role">Pendiri Crepes & Choco Milk</p>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 bg-white rounded-4">
+                        <h4 class="fw-bold fs-5 mb-1 text-center">Ina</h4>
+                        <p class="text-muted small mb-3 text-center">Pendiri Crepes & Choco Milk</p>
 
-                    <ul class="owner-list">
-                        <li><span>Mulai Usaha</span><strong>
-                            2024
-                        </strong></li>
-                        <li><span>Modal Awal</span><strong>
-                            Tabungan Sendiri
-                        </strong></li>
-                         <li><span>Skill Awal</span><strong>
-                            Masih Belajar
-                        </strong></li>
-                         <li><span>Kuliah</span><strong class="status">
-                            Masih Bingung
-                         </strong>
+                        <ul class="list-unstyled text-start border-top border-bottom py-3 my-2 small">
+                            <li class="d-flex justify-content-between py-1">
+                                <span class="text-muted">Mulai Usaha</span>
+                                <strong class="text-dark">2024</strong>
                             </li>
-                    </ul>
+                            <li class="d-flex justify-content-between py-1">
+                                <span class="text-muted">Modal Awal</span>
+                                <strong class="text-dark">Tabungan Sendiri</strong>
+                            </li>
+                            <li class="d-flex justify-content-between py-1">
+                                <span class="text-muted">Skill Awal</span>
+                                <strong class="text-dark">Masih Belajar</strong>
+                            </li>
+                            <li class="d-flex justify-content-between py-1">
+                                <span class="text-muted">Kuliah</span>
+                                <strong class="text-warning bg-dark px-2 py-0.5 rounded">Masih Bingung</strong>
+                            </li>
+                        </ul>
 
-                    <div class="owner-note">
-                        <span aria-hidden="true">*</span>
-                        <p>
-                            "Saya belum tau ingin kuliah dimana. Yang saya tahu,
-                            crepes hari ini tetap harus enak."
-                        </p>
+                        <div class="alert alert-light border fst-italic small text-secondary mt-2 mb-0">
+                            "Saya belum tau ingin kuliah dimana. Yang saya tahu, crepes hari ini tetap harus enak."
+                        </div>
                     </div>
-                </aside>
-
-                                     <!-- CERITA -->
-                <div class="story">
-                    <p class="lead">
-                        Semua dimulai dari hal sederhana: 
-                        <strong>hobi makan crepes</strong>.
-                        Daripada hanya diam saja, Pemilik Crepes & Choco Milk 
-                        mulai merintis usaha nya sendiri pada tahun <strong>2024</strong>.
-                    </p>
-                
-                   <p>
-                    Saat itu skill memasaknya belum bisa dibilang ahli.
-                    Adonan kadang terlalu tebal, resep yang dipelajari
-                    masih kurang dan masakan kadang kurang terasa. Tapi 
-                    setiap kegagalan selalu dicatat, resepnya di pelajari sedikit
-                    lebih sedikit, lalu  dijual lagi dengan rasa yang sudah
-                    cukup pas.
-                   </p>
-
-                   <p>
-                    Modal usahanya bukan pinjaman, melainkan 
-                    <strong>uang tabungannya sendiri</strong>
-                    yang dikumpulkan sedikit demi sedikit. Dari situ
-                    belajar satu hal penting:
-                    usaha kecil tumbuh bukan karena langsung sempurna, tapi 
-                    karena terus diulang dan diperbaiki.
-                   </p>
-
-                   <p>
-                    Kini, dua tahun kemudian, ada 
-                    <strong>12 best seller menu</strong> yang paling sering
-                    dipesan - enam crepes dan enam minuman. 
-                   </p>
-
-                   <blockquote class="quote">
-                    "Kami bukan ahli, Kami cuma orang yang tidak
-                    berhenti mencoba resep sampai pelanggan bilang 'enak'."
-                   </blockquote>
-
-                   <ol class="timeline">
-                    <li>
-                        <span class="time">2024</span>
-                        <div>
-                            <h4>Mulai berjualan dengan skill seadanya</h4>
-                            <p>
-                                Crepes pertama dibuat dari dapur rumah,
-                                modal dari tabungan sendiri.
+                </div>
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 p-md-5 bg-white rounded-4">
+                        <div class="story">
+                            <p class="lead fs-6 text-dark">
+                                Semua dimulai dari hal sederhana: 
+                                <strong>hobi makan crepes</strong>.
+                                Daripada hanya diam saja, Pemilik Crepes & Choco Milk 
+                                mulai merintis usahanya sendiri pada tahun <strong>2024</strong>.
                             </p>
-                        </div>
-                        <span class="time">2024-2025</span>
-                        <h4>Belajar rasa dan konsistensi</h4>
-                        <p>
-                            Menu best seller mulai terbentuk dari
-                            pesanan yang paling sering diulang.
-                        </p>
-                    </li>
-                    <li>
-                        <span class="time">2026</span>
-                        <div>
-                            <h4>Tetap berjualan dengan konsistensi</h4>
-                            <p>
-                                12 menu best seller bertahan, sambil memikirkan
-                                dimana tempat untuk berkuliah
-                            </p>
-                        </div>
-                    </li>
-                   </ol>
-            </div>
-            </div>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+                        
+                           <p class="text-secondary">
+                            Saat itu skill memasaknya belum bisa dibilang ahli.
+                            Adonan kadang terlalu tebal, resep yang dipelajari
+                            masih kurang dan masakan kadang kurang terasa. Tapi 
+                            setiap kegagalan selalu dicatat, resepnya dipelajari sedikit
+                            lebih sedikit, lalu dijual lagi dengan rasa yang sudah
+                            cukup pas.
+                           </p>
+
+                           <p class="text-secondary">
+                            Modal usahanya bukan pinjaman, melainkan 
+                            <strong>uang tabungannya sendiri</strong>
+                            yang dikumpulkan sedikit demi sedikit. Dari situ
+                            belajar satu hal penting:
+                            usaha kecil tumbuh bukan karena langsung sempurna, tapi 
+                            karena terus diulang dan diperbaiki.
+                           </p>
+
+                           <p class="text-secondary">
+                            Kini, dua tahun kemudian, ada 
+                            <strong>12 best seller menu</strong> yang paling sering
+                            dipesan - enam crepes dan enam minuman. 
+                           </p>
+
+                           <figure class="bg-light p-3 border-start border-4 border-warning rounded-end my-4">
+                              <blockquote class="blockquote fs-6 mb-0 text-dark fst-italic">
+                                "Kami bukan ahli, Kami cuma orang yang tidak berhenti mencoba resep sampai pelanggan bilang 'enak'."
+                              </blockquote>
+                           </figure>
+
+                           <!-- Timeline -->
+                           <h5 class="fw-bold mb-4 mt-4">Perjalanan Kami</h5>
+                           <div class="timeline ms-2">
+                                <div class="timeline-item">
+                                    <span class="badge bg-secondary mb-1">2024</span>
+                                    <h5 class="fs-6 fw-bold mb-1">Mulai berjualan dengan skill seadanya</h5>
+                                    <p class="text-muted small mb-0">
+                                        Crepes pertama dibuat dari dapur rumah, modal dari tabungan sendiri.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="badge bg-secondary mb-1">2024 - 2025</span>
+                                    <h5 class="fs-6 fw-bold mb-1">Belajar rasa dan konsistensi</h5>
+                                    <p class="text-muted small mb-0">
+                                        Menu best seller mulai terbentuk dari pesanan yang paling sering diulang.
+                                    </p>
+                                </div>
