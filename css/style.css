@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+:root {
+    --tinta: #222126;
+    --kertas: #faf9f6;
+    --putih: #ffffff;
+    --ungu: #a77bd8;
+}
+
+html {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body{
+    background-color: (--kertas);
+    font-family: 'Poppins', sans-serif;   
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navtext {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: (--tinta);
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: (--tinta);
+}
+
+.fotonav img{
+    width: 90px;
+    height: auto;
+}
+
+.ungu{
+    color: #6f42c1;
+}
+
+.coklat{
+    color: brown;
+}
+
+.gambarbanner {
+    border-radius: 12px;
+    border: 10px dashed var(--ungu) !important;
+    box-shadow: 0 15px 30px var(--tinta) !important;
+}
+
+.card1,
+.card2,
+.card3 {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--tinta) !important;
+}
+
+.pesansekarang {
+    background-color: var(--tinta);
+    border-color: var(--tinta);
+    color: var(--putih);
+    transition: 0.3s ease;
+}
+
+.pesansekarang:hover {
+    background-color: var(--ungu);
+    border-color: var(--ungu);
+    color: var(--putih);
+}
