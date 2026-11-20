@@ -24,9 +24,9 @@ header {
     z-index: 1000;
 }
 
-body{
+body {
     background-color: (--kertas);
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -56,21 +56,21 @@ nav ul {
     align-items: center;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: (--tinta);
 }
 
-.fotonav img{
+.fotonav img {
     width: 90px;
     height: auto;
 }
 
-.ungu{
+.ungu {
     color: #6f42c1;
 }
 
-.coklat{
+.coklat {
     color: brown;
 }
 
@@ -85,6 +85,7 @@ nav ul li a{
 .card3 {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .card1:hover,
 .card2:hover,
 .card3:hover {
@@ -103,4 +104,82 @@ nav ul li a{
     background-color: var(--ungu);
     border-color: var(--ungu);
     color: var(--putih);
+}
+
+.product-heading {
+    color: var(--cokelat-tua);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: var(--ungu-muda);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h5 {
+    color: var(--cokelat-tua);
+    font-weight: 600;
+    min-height: 48px;
+}
+
+.product-info p {
+    color: var(--ungu);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-info label {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.order-section {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-section h2 {
+    color: var(--cokelat-tua);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.order-section>p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--ungu);
+    box-shadow: 0 0 0 0.2rem rgba(167, 123, 216, 0.2);
 }
