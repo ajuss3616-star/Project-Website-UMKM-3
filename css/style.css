@@ -183,3 +183,7 @@ nav ul li a {
     border-color: var(--ungu);
     box-shadow: 0 0 0 0.2rem rgba(167, 123, 216, 0.2);
 }
+
+.judulproduk {
+    font-weight: bold;
+}
