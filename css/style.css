@@ -94,16 +94,16 @@ nav ul li a {
 }
 
 .pesansekarang {
-    background-color: var(--tinta);
-    border-color: var(--tinta);
-    color: var(--putih);
+    background-color: var(--tinta) !important;
+    border-color: var(--tinta) !important;
+    color: var(--putih) !important;
     transition: 0.3s ease;
 }
 
 .pesansekarang:hover {
-    background-color: var(--ungu);
-    border-color: var(--ungu);
-    color: var(--putih);
+    background-color: var(--ungu) !important;
+    border-color: var(--ungu) !important;
+    color: var(--putih) !important;
 }
 
 .product-heading {
