@@ -83,3 +83,37 @@ Terima kasih.`;
         window.open(linkWhatsApp, "_blank");
     });
 }
+
+
+// PROSES FORM KONTAK KE WHATSAPP
+function kirimPesan(event) {
+    event.preventDefault();
+
+    // Mengambil data dari form
+    const nama = document.getElementById("nama").value.trim();
+    const telepon = document.getElementById("telepon").value.trim();
+    const pesanPengguna = document.getElementById("pesan").value.trim();
+
+    // Memeriksa kelengkapan data
+    if (nama === "" || telepon === "" || pesanPengguna === "") {
+        alert("Silakan lengkapi semua data terlebih dahulu!");
+        return;
+    }
+
+    // Membuat format pesan WhatsApp
+    const isiPesan = `Halo, saya ingin menghubungi Crepes & Choco Milk.
+
+Nama: ${nama}
+Nomor Telepon: ${telepon}
+
+Pesan:
+${pesanPengguna}
+
+Terima kasih.`;
+
+    // Membuat link WhatsApp
+    const linkWhatsApp = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(isiPesan)}`;
+
+    // Mengalihkan pengguna ke WhatsApp
+    window.open(linkWhatsApp, "_blank");
+}
