@@ -104,7 +104,7 @@ function kirimPesan(event) {
     const isiPesan = `Halo, saya ingin menghubungi Crepes & Choco Milk.
 
 Nama: ${nama}
-Nomor Telepon: ${telepon}
+Email: ${telepon}
 
 Pesan:
 ${pesanPengguna}
