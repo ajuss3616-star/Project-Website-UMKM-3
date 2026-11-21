@@ -117,3 +117,26 @@ Terima kasih.`;
     // Mengalihkan pengguna ke WhatsApp
     window.open(linkWhatsApp, "_blank");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    
+    // Ambil semua elemen kartu produk
+    const productCards = document.querySelectorAll(".col-12.col-sm-6.col-lg-4");
+
+    searchInput.addEventListener("keyup", function (e) {
+        const term = e.target.value.toLowerCase();
+
+        productCards.forEach(function (card) {
+            // Ambil judul produk dari elemen h5
+            const title = card.querySelector("h5").textContent.toLowerCase();
+
+            // Jika judul produk cocok dengan kata kunci, tampilkan; jika tidak, sembunyikan
+            if (title.includes(term)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
